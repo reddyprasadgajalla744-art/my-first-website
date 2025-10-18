@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
+    <title>G. Reddy Prasad - Web Developer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,64 +11,63 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* A very light gray background */
-        }
-        .shadow-custom {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="bg-gray-100">
 
-    <div class="container mx-auto px-4 py-12">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-3xl font-bold text-gray-800">G. Reddy Prasad</h1>
+            <p class="text-lg text-gray-600">Aspiring Web Developer</p>
+        </div>
+    </header>
 
-        <!-- Header Section -->
-        <header class="text-center mb-16">
-            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-2">Welcome to My Portfolio</h1>
-            <p class="text-lg text-gray-600">A showcase of my journey into web development.</p>
-        </header>
-
+    <main class="container mx-auto px-6 py-12">
         <!-- About Me Section -->
-        <section class="bg-white rounded-lg shadow-custom p-8 mb-12 max-w-3xl mx-auto">
-            <div class="flex flex-col md:flex-row items-center gap-8">
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-12 max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-8"> 
                 <!-- Profile Image -->
                 <div class="flex-shrink-0">
-                    <img class="rounded-full w-36 h-36 object-cover border-4 border-white shadow-lg" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A professional man smiling">
+                    <img class="rounded-full w-36 h-36 object-cover shadow-md" 
+                         src="https://raw.githubusercontent.com/reddyprasadgajalla744-art/my-first-website/main/profile.jpg" 
+                         alt="A profile picture of G. Reddy Prasad">
                 </div>
                 <!-- About Me Text -->
                 <div>
-                    <h2 class="text-3xl font-bold text-gray-900 mb-3 border-b-2 border-indigo-500 pb-2">About Me</h2>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-indigo-500 pb-2">About Me</h2>
                     <p class="text-gray-700 leading-relaxed">
-                        Hello! I'm just beginning my adventure in the world of coding and web development. I am a passionate and curious learner, excited to build beautiful, functional websites and applications. This portfolio is the first step in documenting my progress and showcasing the skills I acquire along the way.
+                        I am an aspiring web developer with a strong passion for creating elegant and effective digital solutions. This portfolio serves as a chronicle of my journey, showcasing my dedication to learning and applying new technologies to build intuitive and responsive web applications. I am actively seeking opportunities to contribute to challenging projects and grow as a developer.
                     </p>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section class="max-w-5xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">My Projects</h2>
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Project Card 1: Portfolio -->
-                <div class="bg-white rounded-lg shadow-custom p-6 flex flex-col hover:transform hover:-translate-y-2 transition-transform duration-300">
-                    <h3 class="text-2xl font-bold mb-3 text-gray-900">My First Web Page</h3>
-                    <p class="text-gray-700 mb-4 flex-grow">This portfolio itself! My first project built with HTML and styled using the powerful Tailwind CSS framework. It's fully responsive and looks great on any device.</p>
-                    <a href="#" class="text-indigo-600 font-semibold hover:underline self-start">View Project &rarr;</a>
+                <!-- Project Card 1: This Portfolio -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Portfolio Website</h3>
+                    <p class="text-gray-700 flex-grow mb-4">A responsive personal portfolio built with HTML and styled using the Tailwind CSS framework to demonstrate foundational web development skills.</p>
+                    <a href="#" class="text-indigo-600 font-semibold hover:underline self-start">Current Page &rarr;</a>
                 </div>
 
                 <!-- Project Card 2: Interactive Form -->
-                <div class="bg-white rounded-lg shadow-custom p-6 flex flex-col hover:transform hover:-translate-y-2 transition-transform duration-300">
-                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Interactive Form</h3>
-                    <p class="text-gray-700 mb-4 flex-grow">A concept for a user-friendly contact form with validation. This project will focus on combining HTML structure with JavaScript to create an interactive experience.</p>
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Interactive Form</h3>
+                    <p class="text-gray-700 flex-grow mb-4">A user-friendly contact form featuring client-side validation with JavaScript, preventing page reloads for an enhanced user experience.</p>
                     <a href="form.html" class="text-indigo-600 font-semibold hover:underline self-start">View Project &rarr;</a>
                 </div>
 
-                <!-- Project Card 3: Calculator -->
-                <div class="bg-white rounded-lg shadow-custom p-6 flex flex-col hover:transform hover:-translate-y-2 transition-transform duration-300">
-                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Simple Calculator</h3>
-                    <p class="text-gray-700 mb-4 flex-grow">A future project to build a working calculator using JavaScript logic. This will be a great exercise in handling user input and performing calculations.</p>
-                    <span class="text-gray-500 self-start">Coming Soon</span>
+                <!-- Project Card 3: Scientific Calculator -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Scientific Calculator</h3>
+                    <p class="text-gray-700 flex-grow mb-4">A feature-rich calculator with standard, scientific, and matrix calculation modes, built to handle complex user input with JavaScript.</p>
+                    <a href="calculator.html" class="text-indigo-600 font-semibold hover:underline self-start">View Project &rarr;</a>
                 </div>
 
             </div>
@@ -76,8 +75,8 @@
 
         <!-- Contact Me Section -->
         <section class="max-w-3xl mx-auto mt-16 text-center">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-            <p class="text-gray-700 mb-8">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+            <p class="text-gray-700 mb-8 max-w-2xl mx-auto">I am always open to new opportunities and collaborations. Please feel free to reach out!</p>
             <div class="flex justify-center items-center gap-4">
                 <a href="mailto:your.email@example.com" class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition-colors duration-300">Email Me</a>
                 <a href="#" class="bg-gray-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-900 transition-colors duration-300">GitHub</a>
@@ -85,7 +84,7 @@
             </div>
         </section>
 
-    </div>
+    </main>
 
     <!-- Footer Section -->
     <footer class="text-center mt-16 py-6 border-t border-gray-200">
